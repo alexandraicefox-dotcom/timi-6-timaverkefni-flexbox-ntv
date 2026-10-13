@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .box-1 {
+        background: red;
+        flex-grow: 1;
+      }
+      .box-2 {
+        background: yellow;
+        flex-shrink: 1;
+      }
+      .box-3 {
+        background: green;
+        flex-shrink: 1;
+      }
+      .box-4 {
+        background: blue;
+        flex-grow: 1;
+      }
+      .box-5 {
+        background: purple;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body style="max-width: 500px;">
+    <div style="display: flex; justify-content: center; flex-direction: column; flex-wrap: wrap; gap: 16px;">
+      <div style="display: flex; gap: 16px;">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+      </div>
+      <div style="display: flex; gap: 16px;">
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-----------Til minnis-----------
+
+
+/*  div style="display: flex      */ 
+
+/*bæti display flex gap á "foreldra" til að gera bilið á milli kassa 
+
+
+
+
+
+
+/*---------Command listi----------*/
+
+/*These are applied to the child elements inside a flex container.*/
+
+-Property	Values	Description
+-order	<integer>	Controls the order of items (default is 0).
+-flex-grow	<number>	Defines how much an item grows relative to others.
+-flex-shrink	<number>	Defines how much an item shrinks relative to others.
+-flex-basis	<length> / auto	Sets the initial size before growing/shrinking.
+-flex	<flex-grow> <flex-shrink> <flex-basis>	Shorthand for grow, shrink, and basis.
+-align-self	auto (default), flex-start, flex-end, center, baseline, stretch	Overrides align-items for a specific item.*/!
